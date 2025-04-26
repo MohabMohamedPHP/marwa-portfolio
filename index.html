@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwa Omar | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #2575fc;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #6a11cb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Marwa Omar</h1>
+  <p>Product / Data Analyst | SQL | Power BI | Python | Excel</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>Data Analyst passionate about transforming raw data into actionable insights. Skilled in SQL, Excel, Power BI, and Python, with experience in marketing, HR, and sales data analysis.</p>
+  <a class="button" href="mailto:marwa.omar622009@gmail.com">Contact Me</a>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="card">Python (Pandas, NumPy, Matplotlib)</div>
+    <div class="card">SQL (MySQL Workbench)</div>
+    <div class="card">Excel (Advanced, Dashboards)</div>
+    <div class="card">Power BI (DAX, Power Query)</div>
+    <div class="card">Tableau</div>
+    <div class="card">Streamlit</div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>E-commerce Sales Analysis</h3>
+      <p>Extracted and analyzed KPIs like orders, sales, and customer retention using MySQL and Excel.</p>
+    </div>
+    <div class="card">
+      <h3>Marketing Campaign Analysis</h3>
+      <p>Analyzed best-selling products and customer segments with Power BI and DAX.</p>
+    </div>
+    <div class="card">
+      <h3>HR Analytics Dashboard</h3>
+      <p>Created dashboards for turnover, hiring, and performance metrics using Power BI.</p>
+    </div>
+    <div class="card">
+      <h3>Car Price Analysis</h3>
+      <p>Built an interactive dashboard using Python and Streamlit to identify pricing trends.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Connect with me: <a href="https://linkedin.com/in/marwa-omar-6476a3267" target="_blank">LinkedIn</a> | Email: marwa.omar622009@gmail.com</p>
+</footer>
+
+<script>
+  // Simple fade-in animation on scroll
+  const sections = document.querySelectorAll('section');
+  window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        sec.style.opacity = 1;
+        sec.style.transform = 'translateY(0)';
+      }
+    });
+  });
+  sections.forEach(sec => {
+    sec.style.opacity = 0;
+    sec.style.transform = 'translateY(50px)';
+    sec.style.transition = 'all 1s ease';
+  });
+</script>
+
+</body>
+</html>
